@@ -26,9 +26,7 @@ def from_celsius():
 
 
 # input data
-print("Hello! I am temperature unit converter. ")
-print("I know next scales: Celsius (C), Fahrenheit (F), Rankine (Ra) ")
-print("and absolute Kelvin temperature (K).")
+print("I hate flake8. I know  Celsius (C), Fahrenheit (F), Rankine (Ra) and Kelvin.")
 units_from = input('Please, input original units (C, F, Ra or K)\n').title()
 units_to = input('Please, input output units (C, F, Ra or K)\n').title()
 value = input('Please, input value\n')
