@@ -9,7 +9,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest, Microsoft Windows [Version 10.0.17763.1282]
+    runs-on: ubuntu-latest, Microsoft Windows
     strategy:
       matrix:
         python-version: [3.7, 3.8]
