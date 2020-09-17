@@ -23,7 +23,8 @@ def from_celsia(units_to, celsia_value):
     return units_value
 
 #input data
-print("Hello! I am temperature unit converter. I know next scales: Celsius (C), Fahrenheit (F), Rankine (Ra) and absolute Kelvin temperature (K).")
+print("Hello! I am temperature unit converter. "
+      "I know next scales: Celsius (C), Fahrenheit (F), Rankine (Ra) and absolute Kelvin temperature (K).")
 units_from = input('Please, input original units (C, F, Ra or K)\n').title()
 units_to = input('Please, input output units (C, F, Ra or K)\n').title()
 value = input('Please, input value\n')
