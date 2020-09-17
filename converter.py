@@ -1,4 +1,3 @@
-#test
 import sys
 units_dict = ['C', 'F', 'Ra', 'K']
 
