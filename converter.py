@@ -26,7 +26,7 @@ def from_celsius():
 
 
 # input data
-print("I hate flake8. I know  Celsius (C), Fahrenheit (F), Rankine (Ra) and Kelvin.")
+print("I hate flake8. I know  Celsius, Fahrenheit, Rankine and Kelvin.")
 units_from = input('Please, input original units (C, F, Ra or K)\n').title()
 units_to = input('Please, input output units (C, F, Ra or K)\n').title()
 value = input('Please, input value\n')
