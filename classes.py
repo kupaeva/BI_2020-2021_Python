@@ -6,7 +6,11 @@ class Rna:
     def gc_content(self):
         g = self.sequence.count('G')
         c = self.sequence.count('C')
-        return (g + c) / len(self.sequence)
+        if len(self.sequence) > 0:
+            return (g + c) / len(self.sequence)
+        else:
+            return None
+
 
     def reverse_complement(self):
         complement = {'A': 'U', 'C': 'G', 'G': 'C', 'U': 'A'}
@@ -27,4 +31,6 @@ class Dna(Rna):
     def transcribe(self):
         complement = {'A': 'U', 'C': 'G', 'G': 'C', 'T': 'A'}
         return Rna("".join(complement.get(base, base) for base in self.sequence))
+testInstance = Rna('ATGC')
+print(testInstance.reverse_complement())
 
