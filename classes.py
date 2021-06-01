@@ -11,6 +11,7 @@ class Rna:
         else:
             return None
 
+
     def reverse_complement(self):
         complement = {'A': 'U', 'C': 'G', 'G': 'C', 'U': 'A'}
         return "".join(complement.get(base, base) for base in reversed(self.sequence))
@@ -30,6 +31,6 @@ class Dna(Rna):
     def transcribe(self):
         complement = {'A': 'U', 'C': 'G', 'G': 'C', 'T': 'A'}
         return Rna("".join(complement.get(base, base) for base in self.sequence))
-
 testInstance = Rna('ATGC')
 print(testInstance.reverse_complement())
+
